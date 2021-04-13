@@ -1,8 +1,51 @@
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: rgb(215, 220, 215);
+}
+
+
+
+@media only screen and (max-width: 2560px) {
+
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+}
+
+
+
+@media only screen and (max-width: 425px) {
+
+h2{
+    font-size: 22px;
+}
+
+h5{
+    font-size:18px;
+}
+
+p{
+    font-size: 16px;
+}
+
+}
+
+
 
 
 .anasayfa_faaliyetler {
@@ -24,6 +67,7 @@
     justify-content: space-between;
     text-align: center;
     position: relative;
+    background-color: rgb(230, 230, 230);
 }
 
 
@@ -106,50 +150,117 @@
 
 }
 
-.hor{
+
+
+
+
+
+
+
+
+footer{
+
+text-align: center;
+color: white;
+background-color: rgb(1, 71, 152);
+
+}
+
+
+footer .social{
     display: flex;
-    flex-wrap:nowrap;
-    overflow-x: auto;
+    justify-content: space-between;
+    width: 800px;
 }
 
-.hor .item {
+footer .social i{
+    color: whitesmoke;
+    font-size: 35px;
+}
 
-    width: 100%;
-    height: 100vh;
+@media only screen and (max-width: 800px) {
+
+    footer .social{
+       width: 90%;
+    }
+
+}
+
+footer .yazi{
+
+width: 80%;
+
+}
+
+footer hr{
+    width: 60%;
+    border-bottom: 2px solid whitesmoke;
+}
+
+@media only screen and (max-width: 768px) {
+
+    footer .yazi{
+       width: 90%;
+    }
+
+}
+
+
+
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 2.6%;
+    background-image: url(images/bg-color.png);
+    border-radius: 15%;
+    background-size: cover;
     text-align: center;
-    flex: 0 0 auto;
 }
 
-
-
-h3{
-    padding-top: 50vh;
+#whatsapp i{
+    font-size: 70px;
+    color: rgb(42, 231, 105);
+    margin: 12px;
 }
 
+@media only screen and (max-width: 425px) {
 
-.i1 {
+    #whatsapp {
+        bottom: 10px;
+        left: 10px;
+    }
 
-    background-color: blueviolet;
-
-}
-
-.i2 {
-
-    background-color: royalblue;
-
-}
-
-.i3 {
-
-    background-color: rgb(26, 4, 46);
-
-}
-
-.i4 {
-
-    background-color: rgb(29, 121, 124);
+    #whatsapp i{
+        font-size: 40px;
+    }
 
 }
 
 
+.desen{
+    position: fixed;
+    top: 20px;
+    left: 2%;
+    width: 96%;
+    max-width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+}
 
+.desen .left{
+    height: 95vh;
+    width: 6%;
+    background-image: url("images/desen1-transparent.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+
+.desen .right{
+    height: 120vh;
+    width: 6%;
+    background-image: url("images/desen1-transparent.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+}
