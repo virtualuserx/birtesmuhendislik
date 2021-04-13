@@ -10,7 +10,7 @@ body{
 
 
 
-@media only screen and (max-width: 2560px) {
+/* @media only screen and (max-width: 2560px) {
 
 
 
@@ -25,7 +25,7 @@ body{
 @media only screen and (max-width: 768px) {
 
 
-}
+} */
 
 
 
@@ -52,6 +52,7 @@ p{
 
     width: 80%;
     margin: auto;
+    overflow:hidden;
 
 }
 
@@ -134,8 +135,9 @@ p{
         width: 100%;
     }
 
-    .anasayfa_faaliyetler .anasayfa_faaliyetler {
+    .anasayfa_faaliyetler .faaliyetler {
         width: 90%;
+        margin: auto;
     }
 
 }
@@ -144,8 +146,10 @@ p{
 
 @media only screen and (max-width: 425px) {
 
-    .anasayfa_faaliyetler .anasayfa_faaliyetler {
+    .anasayfa_faaliyetler .faaliyetler {
         width: 100%;
+        margin: auto;
+
     }
 
 }
@@ -264,3 +268,4 @@ footer hr{
     background-repeat: repeat-y;
     background-size: contain;
 }
+
