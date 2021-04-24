@@ -139,6 +139,9 @@ p{
         width: 90%;
         margin: auto;
     }
+    .anasayfa_faaliyetler{
+        width: 98%;
+    }
 
 }
 
@@ -240,7 +243,7 @@ footer hr{
 
 }
 
-
+/* 
 .desen{
     position: fixed;
     top: 20px;
@@ -267,5 +270,11 @@ footer hr{
     background-image: url("images/desen1-transparent.png");
     background-repeat: repeat-y;
     background-size: contain;
-}
+} */
 
+
+
+
+ .referans{
+     margin-left: 25px;
+ }
