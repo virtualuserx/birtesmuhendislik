@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(215, 220, 215);
 }
 
@@ -31,17 +31,17 @@ body{
 
 @media only screen and (max-width: 425px) {
 
-h2{
-    font-size: 22px;
-}
+    h2 {
+        font-size: 22px;
+    }
 
-h5{
-    font-size:18px;
-}
+    h5 {
+        font-size: 18px;
+    }
 
-p{
-    font-size: 16px;
-}
+    p {
+        font-size: 16px;
+    }
 
 }
 
@@ -52,7 +52,8 @@ p{
 
     width: 80%;
     margin: auto;
-    overflow:hidden;
+    overflow: hidden;
+
 
 }
 
@@ -88,7 +89,7 @@ p{
 }
 
 .anasayfa_faaliyetler .faaliyetler h2 {
-    color: rgb(1, 71, 152);
+    color: rgb(1, 74, 151);
     text-transform: uppercase;
 }
 
@@ -139,7 +140,8 @@ p{
         width: 90%;
         margin: auto;
     }
-    .anasayfa_faaliyetler{
+
+    .anasayfa_faaliyetler {
         width: 98%;
     }
 
@@ -165,49 +167,49 @@ p{
 
 
 
-footer{
+footer {
 
-text-align: center;
-color: white;
-background-color: rgb(1, 71, 152);
+    text-align: center;
+    color: white;
+    background-color: rgb(1, 74, 151);
 
 }
 
 
-footer .social{
+footer .social {
     display: flex;
     justify-content: space-between;
     width: 800px;
 }
 
-footer .social i{
+footer .social i {
     color: whitesmoke;
     font-size: 35px;
 }
 
 @media only screen and (max-width: 800px) {
 
-    footer .social{
-       width: 90%;
+    footer .social {
+        width: 90%;
     }
 
 }
 
-footer .yazi{
+footer .yazi {
 
-width: 80%;
+    width: 80%;
 
 }
 
-footer hr{
+footer hr {
     width: 60%;
     border-bottom: 2px solid whitesmoke;
 }
 
 @media only screen and (max-width: 768px) {
 
-    footer .yazi{
-       width: 90%;
+    footer .yazi {
+        width: 90%;
     }
 
 }
@@ -222,11 +224,13 @@ footer hr{
     border-radius: 15%;
     background-size: cover;
     text-align: center;
+    z-index: 999;
+    /* background-color:rgb(215, 220, 215);  */
 }
 
-#whatsapp i{
+#whatsapp i {
     font-size: 70px;
-    color: rgb(42, 231, 105);
+    color: rgba(11, 197, 73, 0.733);
     margin: 12px;
 }
 
@@ -237,7 +241,7 @@ footer hr{
         left: 10px;
     }
 
-    #whatsapp i{
+    #whatsapp i {
         font-size: 40px;
     }
 
@@ -272,9 +276,333 @@ footer hr{
     background-size: contain;
 } */
 
+.referanslar {
+    margin-top: 100px !important;
+}
+
+.referanslar .referans img {
+    max-height: 250px;
+    object-fit: contain;
+    height: 200px;
+}
+
+.referanslar .referans h5 {
+    height: 50px !important;
+}
+
+.referanslar .referans .card-title {
+    color: rgb(1, 74, 151);
+    border-bottom: 1px solid blue;
+}
+
+.referanslar .referans .icons {
+    justify-content: center;
+}
+
+.referanslar .referans .icons i {
+    margin: 0 !important;
+    padding: 4px;
+}
+
+.referanslar .referans .icons i.ayrim {
+    font-size: 16px !important;
+    color: gray;
+}
+
+.referanslar .referans .icons i.isitma {
+    color: rgba(248, 73, 3, 0.808);
+}
+
+.referanslar .referans .icons i.sogutma {
+    color: rgba(9, 195, 241, 0.842);
+}
+
+.referanslar .referans .icons i.dogalgaz {
+    color: rgba(70, 116, 241, 0.883);
+}
+
+.referanslar .referans .icons i.havalandirma {
+    color: rgba(245, 245, 245, 0.924);
+}
+
+.referanslar .referans .icons i.sihhi {
+    color: rgba(64, 224, 208, 0.692);
+}
+
+@media only screen and (max-width: 2560px) {
+
+    .referanslar .referans .icons i {
+        font-size: 32px;
+    }
+
+}
+
+@media only screen and (max-width: 1150px) {
+
+    .referanslar .referans .icons i {
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .referanslar .referans .icons i {
+        font-size: 32px;
+    }
+
+}
 
 
 
- .referans{
-     margin-left: 25px;
- }
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.logo img{
+    height: 60px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 60px;
+    z-index: 999;
+    transition: 1s;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(1, 74, 151, 1);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+nav.black ul {
+    background: rgba(1, 74, 151, 0);
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: rgb(1, 74, 151);
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+
+
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    .logo img{
+        height: 30px;
+    }
+
+    nav ul {
+        width: 100%;
+        max-height: 0px;
+        background: rgb(1, 74, 151);
+    }
+
+    nav.black ul {
+        background: rgb(1, 74, 151);
+    }
+
+    .showing {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+ 
+    }
+
+
+    .menu-icon {
+        display: block;
+    }
+
+}
+
+
+.slide img {
+    height: 100vh !important;
+    object-fit: cover;
+}
+
+
+
+.anasayfa_hakkimizda {
+    text-align: center;
+    overflow: hidden;
+}
+
+.anasayfa_hakkimizda .box {
+    text-align: left;
+}
+
+.anasayfa_hakkimizda .box img {
+    border-radius: 5%;
+    object-fit: fill;
+}
+
+.anasayfa_hakkimizda .box p span {
+    display: inline;
+    font-size: 1rem;
+    color: rgb(1,74,151);
+    font-weight: bold;
+
+}
+
+.anasayfa_hakkimizda .box {
+    text-align: left;
+}
+
+.anasayfa_hakkimizda h4{
+    color: rgb(1,74,151);
+    font-weight: bold;
+}
+
+.anasayfa_hakkimizda h4.h4_up{
+visibility: hidden;
+}
+
+.anasayfa_hakkimizda .box h4.h4_in{
+position: absolute;
+top: 0;
+left: 20px;
+visibility: visible;
+}
+
+
+
+.anasayfa_hakkimizda .box h1 {
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 65px;
+    font-family: Verdana, sans-serif;
+
+}
+
+.anasayfa_hakkimizda i {
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    background-color: whitesmoke;
+    border: 1px solid rgba(245, 245, 245, 0.774);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.anasayfa_hakkimizda span {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hakkimizda_item_guven {
+    background-color: rgba(245, 242, 78, 0.514);
+}
+
+.hakkimizda_item_plan {
+    background-color: rgba(238, 62, 100, 0.664);
+}
+
+.hakkimizda_item_tasarim {
+    background-color: rgba(42, 236, 226, 0.561);
+}
+
+.hakkimizda_item_guven i {
+    color: rgba(1, 74, 151, 0.8);
+}
+
+.hakkimizda_item_plan i {
+    color: rgba(238, 62, 100, 0.842);
+}
+
+.hakkimizda_item_tasarim i {
+    color: rgba(179, 153, 7, 0.80);
+    
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .anasayfa_hakkimizda .box h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .anasayfa_hakkimizda .box h4.h4_up {
+        visibility: visible;
+        text-align: center;
+    }
+    .anasayfa_hakkimizda .box h4.h4_in {
+        visibility: hidden;
+    }
+
+}
+
+.doviz{
+    overflow-x: auto;
+}
+
+#W4982{
+    margin: auto;
+}
