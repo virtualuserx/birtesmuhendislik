@@ -76,4 +76,4 @@ $(function doviz_yukle(){
     });
     });
 
-    
+
