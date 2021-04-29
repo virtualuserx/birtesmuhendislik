@@ -479,7 +479,15 @@ nav ul li a {
     object-fit: cover;
 }
 
+@media(max-width: 786px) {
 
+    .slide img {
+        height: 70vh !important;
+        object-fit: cover;
+        
+    }
+
+}
 
 .anasayfa_hakkimizda {
     text-align: center;
