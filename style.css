@@ -380,6 +380,14 @@ nav {
     transition: 1s;
 }
 
+nav a{
+    text-decoration: none !important;
+}
+
+nav a:hover{
+    color: whitesmoke;
+}
+
 nav ul {
     line-height: 60px;
     list-style: none;
@@ -434,11 +442,14 @@ nav ul li a {
     .logo {
         position: fixed;
         top: 0;
-        margin-top: 16px;
+        margin: 0px 16px;
     }
 
+    .menu-icon {
+        line-height: 20px;
+    }
     .logo img{
-        height: 30px;
+        height: 40px;
     }
 
     nav ul {
@@ -473,6 +484,18 @@ nav ul li a {
 
 }
 
+@media(max-width: 425px) {
+
+
+    .menu-icon i{
+        font-size: 25px;
+    }
+
+    .menu-icon {
+        line-height: 30px;
+    }
+}
+
 
 .slide img {
     height: 100vh !important;
@@ -483,8 +506,6 @@ nav ul li a {
 
     .slide img {
         height: 70vh !important;
-        object-fit: cover;
-        
     }
 
 }
@@ -621,12 +642,12 @@ visibility: visible;
   position: relative;
   align-items: center;
   margin-top: 60px;
-  max-height: 100vh;
 }
 
 
 .top-head img{
 width: 100%;
+max-height: 90vh;
 object-fit: fill;
 }
 
@@ -666,18 +687,105 @@ object-fit: fill;
 
 0%{
     opacity: 0;
-    transform: translateY(-1rem);
+    transform: translateY(-20px);
 }
 
 100%{
     opacity: 1;
-    transform: translateY(1rem);
+    transform: translateY(20px);
 }
 
 }
+
+
+
+
+
+@media only screen and (max-width: 2560px) {
+
+
+}
+
+@media only screen and (max-width: 1440px) {
+
+   
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .top-head .title h1{
+        font-size: 40px;
+    }
+    .top-head .title h4{
+        font-size: 18px;
+    }
+    
+  
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    
+    .top-head .title{
+        bottom: 10px; 
+    }
+
+    .top-head .title h1{
+        font-size: 20px;
+    }
+    .top-head .title h4{
+        font-size: 16px;
+    }
+    
+   
+}
+
+
+#about{
+
+}
+
+#aboutt .sirket img{
+    object-fit: contain;
+}
+
+#aboutt .sirket h5{
+    color:rgb(1, 74, 151);
+}
+#aboutt hr{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.hr-blue{
+    border-color: rgba(1, 74, 151, 0.705) !important;
+}
+
+
+#aboutt .misyon-vizyon .item{
+    background-color: rgba(245, 245, 245, 0.712); border-radius: 20px;  box-shadow: 2px 2px 50px rgb(1, 74, 151);
+}
+
+#aboutt .misyon-vizyon .item h3{
+    text-decoration: underline; color: rgb(1, 74, 151);
+}
+
+
 
 .contacts{
     background-color: white;
+    background-image: url(images/contact22.jpeg); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: bottom; 
+    border: 15px solid white; 
 
 }
 
@@ -688,10 +796,14 @@ object-fit: fill;
 
 .contacts .contactt div{
     border-radius: 20px;
-    font-size: 30px;
     text-align: center;
     display: flex;
     justify-content: space-between;
+    background-color: rgba(250, 250, 250, 0.8);
+    box-shadow: 5px 5px 18px rgb(1, 74, 151);
+
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
 }
 .contacts .contactt i{
     padding-left: 5px; 
@@ -702,6 +814,72 @@ object-fit: fill;
 .contacts .contactt span{
     color: rgba(0, 0, 0, 0.808);
     padding-right: 20px;
+    font-size: 30px;
+    overflow-x: hidden;
+
+}
+
+
+
+
+    .contacts .contactt span span{
+        font-weight: bold;
+        color: rgb(1, 74, 151);
+    }
+
+@media only screen and (max-width: 2560px) {
+
+    .contacts .contactt span{
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 1440px) {
+    .contacts .contactt span{
+        font-size: 20px;
+    }
+   
+}
+
+@media only screen and (max-width: 1024px) {
+    .contacts .contactt span{
+        font-size: 18px;
+    }
+   
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .contacts .contactt span{
+        font-size: 20px;
+    }
+   
+  
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .contacts{
+        background-image: url(images/contact22_rotated.jpeg); 
+    }
+
+    .contacts .contactt span{
+        font-size: 15px;
+    }
+   
+    .contacts .contactt div{
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .contact-map-form{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+   
 }
 
 
