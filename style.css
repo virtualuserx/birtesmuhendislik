@@ -97,6 +97,9 @@ body {
     /* background: chartreuse; */
 }
 
+.anasayfa_faaliyetler .box_sub {
+    min-width: 40%;
+}
 
 
 
