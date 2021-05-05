@@ -1,7 +1,13 @@
+$(window).on("load",function(){
+    $("#preloader").fadeOut("slow");
+});
+
+
 $(document).ready(function() {
     $(".menu-icon").on("click", function() {
           $("nav ul").toggleClass("showing");
     });
+    
 });
 
 // Scrolling Effect

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="tr-TR">
 
@@ -28,7 +30,7 @@
                 <li><a href="referanslar.html">Referanslar</a></li>
                 <!-- <li><a href="form.php">Hizmetler</a></li> -->
                 <li><a href="about.html">Hakkımızda</a></li>
-                <li><a href="contact.html">İletişim</a></li>
+                <li><a href="contact.php">İletişim</a></li>
             </ul>
         </div>
     </nav>
@@ -41,7 +43,7 @@
         <img src="images/contact1.jpeg" alt="">
         <div class="title">
             <h1>İLETİŞİM</h1>
-            <h4><a href="index.html">Anasayfa</a> -> <a href="contact.html">İletişim</a></h4>
+            <h4><a href="index.html">Anasayfa</a> -> <a href="contact.php">İletişim</a></h4>
             <i class="fas fa-angle-down"></i>
         </div>
     </div>
@@ -117,7 +119,7 @@
             <div class="contact-image">
                 <img src="images/bluemail.png" alt="rocket_contact" />
             </div>
-            <form method="post">
+            <form method="POST" action="contactt.php">
                 <h3>Birtes'e Mail Gönder</h3>
                 <div class="row">
                     <div class="col-md-6">
@@ -142,6 +144,31 @@
                             <input type="submit" name="btnSubmit" class="btnContact" value="Gönder" />
                         </div>
                     </div>
+
+ 
+
+    <?php if (isset($_GET['action'])): ?>
+        <div class="alert alert-danger">Mesajınız iletilememiştir! </div>
+<p class="col-12"><em>Girdiğiniz bilgilerin doğruluğundan emin olunuz</em></p>
+
+<?php else: ?>
+
+    
+
+<?php endif ?>
+
+<?php if (isset($_GET['success'])): ?>
+
+<div class="alert alert-success">Mesajınız Başarı ile iletildi.</div>
+
+
+<?php else: ?>
+
+    
+
+<?php endif ?>
+    
+
                 </div>
             </form>
         </div>
@@ -212,7 +239,9 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-
+    <div id="preloader">
+        <img src="images/loading.gif" alt="">
+    </div>
 
 
     <script src="library/js/jquery-3.6.0.min.js"></script>
@@ -223,8 +252,11 @@
         AOS.init();
     </script>
 
-    <script type="text/javascript" src="https://paracevirici.com/servis/widget/widget.js"></script>
+<script type="text/javascript">
+        window.history.forward();
+    </script>
 
 </body>
 
 </html>
+
